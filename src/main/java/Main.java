@@ -51,9 +51,7 @@ public class Main {
             Process p = builder.start();
             BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
             String line;
-            while (true) {
-                line = r.readLine();
-                if (line == null) { break; }
+            while ((line = r.readLine()) != null) {
                 System.out.println(line);
             }
         } catch (IOException e) {
