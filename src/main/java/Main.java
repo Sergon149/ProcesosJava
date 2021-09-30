@@ -5,12 +5,16 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) {
 
+        Ejercicio.launchProcessAndRead();
+        /*
         launchProcessAndWaiting();
         launchProcessAndStopping();
         launchProcessAndRead();
+        */
+
     }
 
-    private static void launchProcessAndWaiting() {
+    /*private static void launchProcessAndWaiting() {
         String path = "C:\\WINDOWS\\system32\\notepad.exe";
         String[] processToOpen = new String[1];
         processToOpen[0] = path;
@@ -57,7 +61,7 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 }
 
 
